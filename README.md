@@ -1,131 +1,66 @@
-# 🛒 E-Commerce Product Price Prediction Using Machine Learning
+# 🇰🇭 Cambodia Flood Risk Data Cleaning – ML Project (Data Cleaning Only)
 
-## 📘 Project Overview
+This project focuses on **cleaning and preparing a flood risk dataset for Cambodia**. The goal is to preprocess raw environmental data (rainfall, river level, etc.) and prepare it for future machine learning tasks such as flood prediction.
 
-This project aims to predict the prices of products in an e-commerce platform using machine learning. By analyzing features like category, brand, rating, and specifications, the model estimates a suitable price for each product. The goal is to support better pricing strategies for sellers and improve price transparency for consumers.
-
----
-
-## 📌 Table of Contents
-- 🌍 Societal and Industrial Impact
-- 🎯 Objectives
-- 🔍 Research Questions
-- 🧠 Contributions
-- 📦 Dataset
-- 🛠️ Methodology
-- 🤖 ML Models Used
-- ❓ Why These Models?
-- 📏 Evaluation Metrics
-- ⚙️ Hyperparameter Tuning
-- 🧪 Results & Insights
-- 📂 Folder Structure
-- 🚀 How to Run
-- 📝 Report & Presentation
+> 🔍 This is a **data cleaning only** project — no ML model is trained as per assignment requirements.
 
 ---
 
-## 🌍 Societal and Industrial Impact
+## 🧠 Project Overview
 
-- Enables fair and competitive product pricing
-- Builds consumer trust in e-commerce platforms
-- Helps sellers optimize pricing to maximize profits
-- Supports data-driven pricing strategies
-
----
-
-## 🎯 Objectives
-
-- Analyze how product features affect pricing
-- Train ML models to predict product prices
-- Evaluate model performance using regression metrics
-- Provide pricing suggestions based on data insights
+| Item                      | Description                                      |
+|---------------------------|--------------------------------------------------|
+| **Title**                 | Cambodia Flood Risk Data Cleaning                |
+| **Societal Impact**       | Helps improve disaster preparedness & response   |
+| **Problem Statement**     | Raw flood-related data is messy and unusable     |
+| **Research Questions**    | What: Flood risk patterns? Why: Predict disasters? How: Clean data for ML |
+| **Contribution**          | Cleaned, structured dataset for Cambodia floods  |
+| **Dataset Type**          | Synthetic / Simulated (Secondary)               |
+| **ML Use**                | No model training (Data Cleaning only)           |
 
 ---
 
-## 🔍 Research Questions
+## 📁 Dataset Features
 
-- **What** features influence product prices in e-commerce?
-- **Why** is accurate price prediction important for platforms and users?
-- **How** can ML models estimate realistic prices using available data?
-
----
-
-## 🧠 Contributions
-
-- Built a regression-based ML pipeline for price prediction
-- Engineered features like category, brand, rating, etc.
-- Compared multiple ML models for performance
-- Generated actionable insights for pricing decisions
-
----
-
-## 📦 Dataset
-
-- **Type:** Secondary Dataset  
-- **Source:** [Kaggle / Flipkart Product Data / Amazon](#)  
-- **Key Columns:**  
-  - Product Name  
-  - Brand  
-  - Category  
-  - Rating  
-  - Number of Reviews  
-  - Product Specs  
-  - Selling Price (Target)
+| Column Name            | Description                                |
+|------------------------|--------------------------------------------|
+| `ID`                   | Entry identifier                           |
+| `Date`                 | Date of data entry                         |
+| `Region`               | Province or region in Cambodia             |
+| `Rainfall_mm`          | Rainfall amount in millimeters             |
+| `River_Level_m`        | River height in meters                     |
+| `Soil_Saturation_pct`  | Soil saturation percentage                 |
+| `Temperature_C`        | Temperature in Celsius                     |
+| `Flood_Occurred`       | Whether a flood occurred (Yes/No)          |
+| `Season`               | Automatically assigned: Rainy or Dry       |
 
 ---
 
-## 🛠️ Methodology
+## 🧼 Cleaning Steps
 
-1. Data Cleaning and Preprocessing
-2. Feature Encoding
-3. Train-Test Split
-4. Model Training (Regression)
-5. Evaluation & Tuning
-6. Visualization and Insights
-
----
-
-## 🤖 ML Models Used
-
-- Linear Regression  
-- Decision Tree Regressor  
-- Random Forest Regressor  
-- XGBoost Regressor (optional)
+- Removed duplicate records
+- Converted dates to proper format
+- Renamed columns for clarity
+- Standardized region names
+- Handled missing values
+- Added a new `Season` column based on month
+- Sorted dataset by date
+- Saved the cleaned data into CSV format
 
 ---
 
-## ❓ Why These Models?
+## 🛠️ Tools Used
 
-- Effective for tabular regression tasks  
-- Easy to interpret  
-- Handle numerical and categorical features  
-- Tree-based models capture non-linear patterns
-
----
-
-## 📏 Evaluation Metrics
-
-- R² Score (Accuracy of prediction)  
-- MAE (Mean Absolute Error)  
-- RMSE (Root Mean Squared Error)
+- Python
+- Pandas
+- NumPy
+- Visual Studio Code
 
 ---
 
-## ⚙️ Hyperparameter Tuning
+## 🚀 How to Run
 
-- Random Forest: `n_estimators`, `max_depth`  
-- Decision Tree: `max_depth`, `min_samples_split`  
-- XGBoost: `learning_rate`, `n_estimators`, `max_depth`  
-
-Tuned using GridSearchCV and manual testing.
-
----
-
-## 🧪 Results & Insights
-
-- Random Forest achieved the highest R² Score
-- Top 3 price-influencing features: Brand, Category, Rating
-- Price outliers were filtered to improve model accuracy
-
----
-
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/cambodia-flood-cleaning.git
+   cd cambodia-flood-cleaning
