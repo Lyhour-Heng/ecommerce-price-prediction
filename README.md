@@ -1,5 +1,6 @@
 # ecommerce-price-prediction
 Predicting product prices using ML models in an e-commerce setting.
+
 🌐 Price Prediction for E-Commerce Using Machine Learning
 📘 Project Overview
 This project aims to predict the prices of products in an e-commerce setting using historical product data and machine learning. By analyzing features such as product category, brand, rating, reviews, and specifications, the model estimates an appropriate selling price. This helps e-commerce platforms and sellers set competitive prices, optimize profits, and improve customer trust.
