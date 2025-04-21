@@ -1,132 +1,133 @@
-# ecommerce-price-prediction
-Predicting product prices using ML models in an e-commerce setting.
+# 🛒 E-Commerce Product Price Prediction Using Machine Learning
 
-🌐 Price Prediction for E-Commerce Using Machine Learning
-📘 Project Overview
-This project aims to predict the prices of products in an e-commerce setting using historical product data and machine learning. By analyzing features such as product category, brand, rating, reviews, and specifications, the model estimates an appropriate selling price. This helps e-commerce platforms and sellers set competitive prices, optimize profits, and improve customer trust.
+## 📘 Project Overview
 
-📚 Table of Contents
-🌍 Societal and Industrial Impact
+This project aims to predict the prices of products in an e-commerce platform using machine learning. By analyzing features like category, brand, rating, and specifications, the model estimates a suitable price for each product. The goal is to support better pricing strategies for sellers and improve price transparency for consumers.
 
-🎯 Objectives
+---
 
-🔍 Research Questions
+## 📌 Table of Contents
+- 🌍 Societal and Industrial Impact
+- 🎯 Objectives
+- 🔍 Research Questions
+- 🧠 Contributions
+- 📦 Dataset
+- 🛠️ Methodology
+- 🤖 ML Models Used
+- ❓ Why These Models?
+- 📏 Evaluation Metrics
+- ⚙️ Hyperparameter Tuning
+- 🧪 Results & Insights
+- 📂 Folder Structure
+- 🚀 How to Run
+- 📝 Report & Presentation
 
-🧠 Contributions
+---
 
-📦 Dataset
+## 🌍 Societal and Industrial Impact
 
-🛠️ Methodology
+- Enables fair and competitive product pricing
+- Builds consumer trust in e-commerce platforms
+- Helps sellers optimize pricing to maximize profits
+- Supports data-driven pricing strategies
 
-🤖 ML Models Used
+---
 
-❓ Why These Models?
+## 🎯 Objectives
 
-📏 Evaluation Metrics
+- Analyze how product features affect pricing
+- Train ML models to predict product prices
+- Evaluate model performance using regression metrics
+- Provide pricing suggestions based on data insights
 
-⚙️ Hyperparameter Tuning
+---
 
-🌍 Societal and Industrial Impact
-🛒 Helps sellers set competitive and fair prices.
+## 🔍 Research Questions
 
-💰 Increases transparency in e-commerce pricing.
+- **What** features influence product prices in e-commerce?
+- **Why** is accurate price prediction important for platforms and users?
+- **How** can ML models estimate realistic prices using available data?
 
-📦 Improves buyer trust through consistent pricing models.
+---
 
-📊 Supports data-driven decisions in online marketplaces.
+## 🧠 Contributions
 
-🎯 Objectives
-Understand which product features influence pricing.
+- Built a regression-based ML pipeline for price prediction
+- Engineered features like category, brand, rating, etc.
+- Compared multiple ML models for performance
+- Generated actionable insights for pricing decisions
 
-Train regression models to predict product prices accurately.
+---
 
-Evaluate model performance to choose the best one.
+## 📦 Dataset
 
-Offer price recommendations based on data insights.
+- **Type:** Secondary Dataset  
+- **Source:** [Kaggle / Flipkart Product Data / Amazon](#)  
+- **Key Columns:**  
+  - Product Name  
+  - Brand  
+  - Category  
+  - Rating  
+  - Number of Reviews  
+  - Product Specs  
+  - Selling Price (Target)
 
-🔍 Research Questions
-What features affect the price of a product in e-commerce?
+---
 
-Why is accurate price prediction important for sellers and buyers?
+## 🛠️ Methodology
 
-How can ML models be used to predict price based on product data?
+1. Data Cleaning and Preprocessing
+2. Feature Encoding
+3. Train-Test Split
+4. Model Training (Regression)
+5. Evaluation & Tuning
+6. Visualization and Insights
 
-🧠 Contributions
-Built a machine learning pipeline to predict product prices.
+---
 
-Extracted and engineered features relevant to pricing.
+## 🤖 ML Models Used
 
-Compared multiple models to identify the most accurate one.
+- Linear Regression  
+- Decision Tree Regressor  
+- Random Forest Regressor  
+- XGBoost Regressor (optional)
 
-Delivered insights into price influencers for strategic pricing.
+---
 
-📦 Dataset
-Type: Secondary Dataset
+## ❓ Why These Models?
 
-Source: (e.g., Kaggle - E-commerce Product Prices or Flipkart/Amazon data)
+- Effective for tabular regression tasks  
+- Easy to interpret  
+- Handle numerical and categorical features  
+- Tree-based models capture non-linear patterns
 
-Features:
+---
 
-Product Name
+## 📏 Evaluation Metrics
 
-Brand
+- R² Score (Accuracy of prediction)  
+- MAE (Mean Absolute Error)  
+- RMSE (Root Mean Squared Error)
 
-Category
+---
 
-Rating
+## ⚙️ Hyperparameter Tuning
 
-Number of Reviews
+- Random Forest: `n_estimators`, `max_depth`  
+- Decision Tree: `max_depth`, `min_samples_split`  
+- XGBoost: `learning_rate`, `n_estimators`, `max_depth`  
 
-Product Specifications (e.g., size, weight, RAM)
+Tuned using GridSearchCV and manual testing.
 
-Selling Price (Target)
+---
 
-🛠️ Methodology
-Data Collection (from open sources like Kaggle)
+## 🧪 Results & Insights
 
-Data Cleaning & Preprocessing
+- Random Forest achieved the highest R² Score
+- Top 3 price-influencing features: Brand, Category, Rating
+- Price outliers were filtered to improve model accuracy
 
-Feature Engineering
+---
 
-Train-Test Split
-
-Model Training (Regression models)
-
-Evaluation & Visualization
-
-Hyperparameter Tuning
-
-🤖 ML Models Used
-Linear Regression
-
-Decision Tree Regressor
-
-Random Forest Regressor
-
-XGBoost Regressor (optional)
-
-❓ Why These Models?
-Easy to understand and implement
-
-Effective for tabular regression tasks
-
-Tree-based models handle non-linearity and mixed feature types
-
-XGBoost offers high accuracy in structured datasets
-
-📏 Evaluation Metrics
-R² Score
-
-MAE (Mean Absolute Error)
-
-RMSE (Root Mean Squared Error)
-
-⚙️ Hyperparameter Tuning
-Used GridSearchCV / manual tuning for:
-
-n_estimators, max_depth, min_samples_split (Random Forest, XGBoost)
-
-Learning rate (for XGBoost)
-
-Polynomial degree (if trying Polynomial Regression)
+## 📂 Folder Structure
 
